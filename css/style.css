@@ -331,9 +331,11 @@ body {
 }
 
 #banner h2 {
-    color: #f3d29b;
+    color: #f5f2ee;
     /* font-size: 30px; */
-    padding: 10px 0;
+    padding: 10px 0px;
+    /* margin-left: 20px !important; */
+    /* text-align: end; */
 }
 
 #banner h2 span {
@@ -497,6 +499,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 footer .col{
@@ -508,11 +511,12 @@ footer .col{
 }
 
 footer .logo {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: -20px;
 }
 
 footer h4 {
-    font-size: 20px;
+    font-size: 25px;
     padding-bottom: 20px;
 }
 
@@ -536,6 +540,7 @@ footer .follow i{
     color: #502507;
     padding-right: 4px;
     cursor: pointer;
+    font-size: 35px;
  }
 
  footer .install .row img {
