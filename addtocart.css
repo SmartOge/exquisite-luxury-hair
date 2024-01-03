@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heade1 {
+  height: 70px;
+  width: 1000%;
+  background-color: #fab778;
+  border-radius: 3px;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.header .logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  
+}
+
+.cart {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 3px;
+  width: 80px;
+}
+
+.fa-solid {
+  color: #fab778;
+}
+
+.cart p {
+  height: 22px;
+  width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  background-color: #fab778;
+  color: white;
+}
+
+.container {
+  display: flex;
+  width: 95%;
+  margin-bottom: 30px;
+}
+
+#root {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.sidebar {
+  width: 30%;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  margin-left: 60px;
+  padding: 15px;
+  text-align: center;
+}
+
+.head {
+  background-color: #fab778;
+  border-radius: 3px;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c1505;
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #fff;
+}
+
+
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  padding: 10px 0px;
+  border-top: 1px solid #333;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #fab778;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.img-box {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.images {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bottom {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 110px;
+}
+
+h2 {
+  font-size: 20px;
+  color: red;
+}
+
+button {
+  width: 100%;
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  background-color: #fab778;
+  padding: 7px 25px;
+  cursor: pointer;
+  color: white;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid #aaa;
+  border-radius: 3px;
+  margin: 10px 10px;
+}
+
+.row-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid #fab778;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rowimg {
+  max-width: 43px;
+  max-height: 43px;
+  border-radius: 50%;
+}
+
+.fa-trash:hover {
+  cursor: pointer;
+  color: #333;
+}
+
+/* CHECKOUT */
+.checkout-button {
+  text-decoration: none;
+  color: white;
+}
+
+.checkout-button button {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #fab778;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.checkout-button button:hover {
+  background-color: #333;
+}
+/* CHECKOUT DONE */
+
+@media (max-width: 767px) {
+  body {
+    padding: 10px;
+  }
+
+  .header {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #root {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr)
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 70%;
+    margin-left: 0;
+  }
+}
+
+#cartPage, #paymentPage, #confirmationPage {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fab778;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.quantity-input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.quantity-input-container label {
+  font-size: 12px;
+}
+
+.cart-quantity {
+  width: 40px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+  body {
+    padding:10px;
+  }
+
+  .header {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #root {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 70%;
+    margin-left: 0;
+  }
+
+  .box {
+    padding: 10px;
+  }
+}

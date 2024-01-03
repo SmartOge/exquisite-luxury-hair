@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="addtocart.css">
+  <script src="https://kit.fontawesome.com/c7a86171a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="heade1">
+    <a href=""><img src="image/logo1.png" class="logo" width="80"></a>
+    
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <!-- <li id="lg-bag"><a href="addtocart.html"><i class="far fa-shopping-bag"></i></a></li> -->
+        <!-- <a href="" id="close"><i class="far fa-times"></i></a> -->
+    </ul>
+    
+    <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+  </div>
+
+  <div class="container">
+    <div id="root"></div>
+    <div class="sidebar">
+      <div class="head"><p>My Cart</p></div>
+      <div id="cartItem">Your cart is empty</div>
+      <div class="foot">
+        <h3>Total</h3>
+        <h2 id="total">$ 0.00</h2>
+      </div>
+      <button id="paymentButton" onclick="makePayment()">Proceed to Payment</button>
+    </div>
+
+   
+</div>
+
+ 
+
+<!-- Your existing HTML content here -->
+
+  <!-- Cart Page -->
+  <!--<div id="cartPage">
+    <div id="cartItem"></div>
+    <div id="total"></div>
+    <button id="proceedToPaymentBtn" onclick="proceedToPayment()">Proceed to Payment Page</button>
+  </div>
+
+  <!-- Payment Page 
+  <div id="paymentPage" style="display: none;">
+    <h2>Payment Page</h2>
+    <!-- Add your payment form and details here 
+    <button onclick="confirmPayment()">Confirm Payment</button>
+  </div>
+
+  <!-- Confirmation Page 
+  <div id="confirmationPage" style="display: none;">
+    <h2>Confirmation Page</h2>
+    <p>Thank you for your purchase!</p>
+    <!-- Add additional confirmation details here 
+  </div>-->
+
+  <script src="addtocart.js"></script>
+  <script src="https://checkout.flutterwave.com/v3.js"></script>
+</body>
+</html>
